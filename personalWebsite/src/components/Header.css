@@ -1,0 +1,47 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #f0f6ff;
+  }
+  
+  .header-left, .header-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 40px; /* Adjust size as needed */
+    height: auto;
+  }
+  
+  .menu {
+    margin-left: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #1a2a3a;
+  }
+  
+  .header-right .hire-me {
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #1a2a3a;
+  }
+  
+  .header-left .menu::before {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 20px;
+    margin: 0 15px;
+    background-color: #1a2a3a;
+  }
+  
+  .hire-me::before {
+    content: '\1F4AC'; /* Unicode for speech balloon */
+    margin-right: 10px;
+    color: #a333c8; /* Purple color */
+    font-size: 24px;
+  }
+  
