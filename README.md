@@ -1,2 +1,2 @@
 # Personal_website
- personal website
+Website built with React, Nodejs, MongoDB
