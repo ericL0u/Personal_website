@@ -1,4 +1,39 @@
+.descrip{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    max-width: 40%;
+}
 
+.projectDesc{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.rigthShift40{
+    max-width: 20%;
+    margin: auto;
+}
+
+.flex-Row{
+    display:flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+}
+
+
+.flex-Row > div{
+    flex:1
+}
+
+
+.dots-background {
+    position: absolute;
+    width: 40%; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
+    right: 200px;
+    background-image: radial-gradient(#add8e6 1px, transparent 1px);
+    background-size: 10px 10px; /* Adjust the spacing between dots */
+  }
+  
 
 .work-font{
     font-family: 'Bitter', serif;
@@ -12,30 +47,34 @@
 
 
 .work-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 50px 20px;
-  background-color: #f0f6ff;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 50px 20px;
+    background-color: #f0f6ff;
+    padding-left: 250px;
+    width: 100%;
+  }
 
 .work-section h2 {
-  font-size: 2rem;
+  font-size: 28px;
   color: #1a2a3a;
   margin-bottom: 20px;
+  justify-self: start;
 }
 
 .work-section p {
   font-size: 1rem;
   color: #1a2a3a;
   margin-bottom: 40px;
+  
 }
 
 .work-item {
   display: flex;
   align-items: flex-start;
-  max-width: 600px;
+  max-width: 80%;
   margin-bottom: 50px;
 }
 

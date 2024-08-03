@@ -1,29 +1,32 @@
 .home-section {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
     padding: 50px 20px;
     background-color: #f0f6ff;
     position: relative;
+    padding-left: 250px;
   }
   
   .home-details {
     max-width: 600px;
     margin-top: 50px;
-    text-align: center;
+
   }
   
   .home-details h2 {
     font-size: 2rem;
     color: #1a2a3a;
     margin-bottom: 10px;
+    text-align: left;
   }
   
   .home-details p {
     font-size: 1rem;
     color: #1a2a3a;
     margin-bottom: 20px;
+
   }
   
   .home-details strong {
@@ -39,6 +42,7 @@
     cursor: pointer;
     position: relative;
     overflow: hidden;
+    border-radius: 7px; /* Make button edges round */
   }
   
   .home-button::before {
@@ -52,6 +56,7 @@
     transition: transform 0.3s;
     transform: scaleX(0);
     transform-origin: left;
+    
   }
   
   .home-button:hover::before {

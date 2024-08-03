@@ -9,8 +9,8 @@ function About() {
         <img src={profilePic} alt="Profile" className="profile-pic" />
         <h1>Hi, my name is <strong>Eric.</strong></h1>
         <p className="scroll-text">SCROLL</p>
-        <div className="scroll-line"></div>
       </div>
+      <div className="scroll-line"></div>
     </section>
   );
 }
