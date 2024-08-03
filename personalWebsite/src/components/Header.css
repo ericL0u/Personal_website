@@ -23,7 +23,7 @@
     color: #1a2a3a;
   }
   
-  .header-right .hire-me {
+  .header-right .talk {
     font-size: 18px;
     letter-spacing: 2px;
     color: #1a2a3a;
@@ -38,7 +38,7 @@
     background-color: #1a2a3a;
   }
   
-  .hire-me::before {
+  .talk::before {
     content: '\1F4AC'; /* Unicode for speech balloon */
     margin-right: 10px;
     color: #a333c8; /* Purple color */

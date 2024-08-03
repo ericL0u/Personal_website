@@ -10,7 +10,7 @@ function Header() {
         <span className="menu">MENU</span>
       </div>
       <div className="header-right">
-        <span className="hire-me">Implementing chat ⊂(▀¯▀⊂ )</span>
+        <span className="talk">Implementing chat ⊂(▀¯▀⊂ )</span>
       </div>
     </header>
   );
