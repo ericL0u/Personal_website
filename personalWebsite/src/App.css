@@ -5,6 +5,14 @@
   text-align: center;
 }
 
+.page{
+
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;

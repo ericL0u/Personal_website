@@ -7,9 +7,13 @@ function Header() {
     <header className="header">
       <div className="header-left">
         <img src={logo} alt="Logo" className="logo" />
-        <span className="menu">MENU</span>
+        <button className="menu" >        
+        MENU
+        </button>
+
       </div>
       <div className="header-right">
+        
         <span className="talk">Implementing chat ⊂(▀¯▀⊂ )</span>
       </div>
     </header>

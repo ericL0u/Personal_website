@@ -5,14 +5,14 @@ import openSourceLogo from '../assets/logo.jpg';
 
 const Project = ({ title, descrip1, descrip2, img, imgTitle }) => {
   return (
-    <div className='work-item'>
+    <div className='work-item padLeft'>
       <img src={img} alt={imgTitle} className='work-logo' />
         <div className='flex-Col'>
         <div className='work-details'>
             <h3>{title}</h3>
             <p className='projectDesc'>{descrip1}</p>
             <p className='projectDesc'>{descrip2}</p>
-        </div>
+        </div> 
         <button className='work-button'>Get {title}</button>
         </div>
     </div>
@@ -33,7 +33,7 @@ function Work() {
     return (
       <section className="work-section work-font">
         <div className='flex-Row'>
-          <div>
+          <div className='padLeft'>
             <h2 className='headingSize'>Open Source.</h2>
             <p className='descrip rightShift40'>
               From time to time I like to release open source projects to help the wider web development community. Below are two of my most popular releases.

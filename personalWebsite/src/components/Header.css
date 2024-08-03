@@ -17,10 +17,17 @@
   }
   
   .menu {
+    display: inline-block;
     margin-left: 10px;
     font-size: 18px;
     letter-spacing: 2px;
     color: #1a2a3a;
+    background: none; /* Remove background color */
+    border: none; /* Remove border */
+    padding: 0; /* Remove default padding */
+    cursor: pointer; /* Change cursor to pointer */
+    color: inherit; /* Inherit text color */
+    font: inherit; /* Inherit font properties */
   }
   
   .header-right .talk {

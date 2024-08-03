@@ -1,3 +1,10 @@
+
+.padLeft{
+
+    padding-left: 250px;
+
+}
+
 .descrip{
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     max-width: 40%;
@@ -27,7 +34,7 @@
 
 .dots-background {
     position: absolute;
-    width: 40%; /* Adjust as needed */
+    width: 22%; /* Adjust as needed */
     height: 150px; /* Adjust as needed */
     right: 200px;
     background-image: radial-gradient(#add8e6 1px, transparent 1px);
@@ -51,9 +58,9 @@
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
-    padding: 50px 20px;
+    /* padding: 50px 20px; */
     background-color: #f0f6ff;
-    padding-left: 250px;
+    /* padding-left: 250px; */
     width: 100%;
   }
 
@@ -106,6 +113,7 @@
   font-size: 1rem;
   color: #1a2a3a;
   margin-bottom: 10px;
+  margin-right: 100px;
 }
 
 .work-button {
