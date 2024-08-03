@@ -1,6 +1,7 @@
 import React from 'react';
 import './Work.css';
 import openSourceLogo from '../assets/logo.jpg';
+import './styles/styles.css'
 
 
 const Project = ({ title, descrip1, descrip2, img, imgTitle }) => {
@@ -34,7 +35,9 @@ function Work() {
       <section className="work-section work-font">
         <div className='flex-Row'>
           <div className='padLeft'>
-            <h2 className='headingSize'>Open Source.</h2>
+            <h2 className='headingSize'>Open Source
+            <span className='dot'>.</span>
+            </h2>
             <p className='descrip rightShift40'>
               From time to time I like to release open source projects to help the wider web development community. Below are two of my most popular releases.
             </p>
