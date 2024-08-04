@@ -35,11 +35,11 @@ function Work() {
       <section className="work-section work-font">
         <div className='flex-Row'>
           <div className='padLeft'>
-            <h2 className='headingSize'>Open Source
+            <h2 className='headingSize'>Projects
             <span className='dot'>.</span>
             </h2>
             <p className='descrip rightShift40'>
-              From time to time I like to release open source projects to help the wider web development community. Below are two of my most popular releases.
+              Here list some of my most interesting projects with different areas of technical skills involved.
             </p>
           </div>
           <div className="dots-background"></div>
