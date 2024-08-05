@@ -23,8 +23,8 @@ const Project = ({ title, descrip1, descrip2, img, imgTitle }) => {
 function Work() {
     const allProjects = {
       1: {
-        'title': 'SynthWave \'84',
-        'descrip1': 'I\'m a big fan of Visual Studio Code, but when I couldn\'t find a colour scheme I liked, I decided to roll my own. SynthWave was the result.',
+        'title': 'Automation display of fetching of KPIs',
+        'descrip1': 'This is an key project constructed for my previous intern ',
         'descrip2': 'Since I first tweeted about its development the theme has proven to be wildly popular, passing one million downloads in September 2022.',
         'img': openSourceLogo,
         'imgTitle': 'SynthWave \'84 Logo'
