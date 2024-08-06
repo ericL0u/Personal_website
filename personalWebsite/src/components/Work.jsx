@@ -35,6 +35,20 @@ function Work() {
         'descrip2': 'EMPTY',
         'img': 'EMPTY',
         'imgTitle': 'EMPTY'
+      },
+      3: {
+        'title': 'EMPTY',
+        'descrip1': 'EMPTY',
+        'descrip2': 'EMPTY',
+        'img': 'EMPTY',
+        'imgTitle': 'EMPTY'
+      },
+      4: {
+        'title': 'EMPTY',
+        'descrip1': 'EMPTY',
+        'descrip2': 'EMPTY',
+        'img': 'EMPTY',
+        'imgTitle': 'EMPTY'
       }
     }
   
