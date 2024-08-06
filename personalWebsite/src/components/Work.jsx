@@ -28,6 +28,13 @@ function Work() {
         'descrip2': 'Since I first tweeted about its development the theme has proven to be wildly popular, passing one million downloads in September 2022.',
         'img': openSourceLogo,
         'imgTitle': 'SynthWave \'84 Logo'
+      },
+      2: {
+        'title': 'EMPTY',
+        'descrip1': 'EMPTY',
+        'descrip2': 'EMPTY',
+        'img': 'EMPTY',
+        'imgTitle': 'EMPTY'
       }
     }
   
