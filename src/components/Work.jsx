@@ -15,6 +15,7 @@ const Project = ({ title, descrip1, descrip2, img, imgTitle }) => {
           <p className="projectDesc">{descrip1}</p>
           <p className="projectDesc">{descrip2}</p>
         </div>
+        {/* Changed Router Link */}
         <button className="work-button">Get {title}</button>
       </div>
     </div>
