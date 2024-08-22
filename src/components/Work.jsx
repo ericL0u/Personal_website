@@ -27,9 +27,9 @@ function Work() {
     1: {
       title: "Automation display and fetching of KPIs",
       descrip1:
-        "This is an key project constructed for my previous intern in displaying KPIs that are involved within the work place.",
+        "This is an key project constructed for my previous intern in displaying KPIs that are involved within the work place. All internal users are able to view current progress and any live update that occurs. ",
       descrip2:
-        "All internal users are able to view current progress and any live update that occurs.",
+        "Skills involved: React, Flask, MongoDB, Python",
       img: projectImg1,
       imgTitle: "DataVisualization",
     },
