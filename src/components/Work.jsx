@@ -34,9 +34,9 @@ function Work() {
       imgTitle: "DataVisualization",
     },
     2: {
-      title: "EMPTY",
-      descrip1: "EMPTY",
-      descrip2: "EMPTY",
+      title: "Backend API for article publication/forum",
+      descrip1: "An project aimed to help people quickly built up a service that has simple article functionality, user verification and authentication.",
+      descrip2: "Skills involved: Docker, SQL, Express, Sequelize, Postman",
       img: "EMPTY",
       imgTitle: "EMPTY",
     },
