@@ -13,10 +13,10 @@ const Project = ({ title, descrip1, descrip2, img, imgTitle }) => {
         <div className="work-details">
           <h3>{title}</h3>
           <p className="projectDesc">{descrip1}</p>
-          <p className="projectDesc">{descrip2}</p>
+          <p className="projectDesc" ><strong>{descrip2}</strong></p>
         </div>
         {/* Changed Router Link */}
-        <button className="work-button">Get {title}</button>
+        <button className="work-button">Get {title}</button> 
       </div>
     </div>
   );
@@ -27,7 +27,9 @@ function Work() {
     1: {
       title: "Automation display and fetching of KPIs",
       descrip1:
-        "This is an key project constructed for my previous intern in displaying KPIs that are involved within the work place. All internal users are able to view current progress and any live update that occurs. ",
+        `This is an key project constructed for my previous intern in displaying KPIs that are involved within the work place. 
+        All internal users are able to view current progress and any live update that occurs. 
+        Authenticated users are also able to alter data. `,
       descrip2:
         "Skills involved: React, Flask, MongoDB, Python",
       img: projectImg1,
