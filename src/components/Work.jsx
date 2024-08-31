@@ -37,11 +37,14 @@ function Work() {
     },
     2: {
       title: "Backend API for article publication/forum",
-      descrip1: "An project aimed to help people quickly built up a service that has simple article functionality, user verification and authentication.",
+      descrip1: `An backend project mimicing Linkedin learning's backend service that has article publication functionality, 
+      user verification, authentication, course recommandation tracking, favorite counts.`,
+
       descrip2: "Skills involved: Docker, Docker compose, SQL, Express, Sequelize, Postman, RESTful",
       img: "EMPTY",
       imgTitle: "EMPTY",
     },
+    
     3: {
       title: "EMPTY",
       descrip1: "EMPTY",
