@@ -1,5 +1,5 @@
 # Intro - Personal Webpage
-Simple personal website constructed by React.
+Simple personal website constructed with React.
 Used Vite for init setup
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
