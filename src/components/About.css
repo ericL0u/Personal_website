@@ -48,6 +48,12 @@
     transform: translateX(-50%); /* Center the line */
   }
   
+  .profile-pic{
+
+    width: 200px;
+
+  }
+  
   @keyframes scroll-line {
     0% {
       bottom: 10px; /* Start from 10px above the bottom */

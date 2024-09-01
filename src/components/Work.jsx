@@ -1,6 +1,6 @@
 import React from "react";
 import "./Work.css";
-import openSourceLogo from "../assets/logo.jpg";
+import openSourceLogo from "../assets/logo.png";
 import projectImg1 from "../assets/data.png";
 
 import "./styles/styles.css";

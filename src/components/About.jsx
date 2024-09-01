@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-import profilePic from '../assets/logo.jpg'; // Adjust the path according to your project structure
+import profilePic from '../assets/logo.png'; // Adjust the path according to your project structure
 import './styles/styles.css'
 
 
