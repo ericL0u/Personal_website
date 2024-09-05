@@ -2,8 +2,8 @@ import React from 'react';
 import './About.css';
 import profilePic from '../assets/logo.png'; // Adjust the path according to your project structure
 import './styles/styles.css'
-
-
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 function About() {
   return (
     <section className="about-section">
@@ -30,9 +30,17 @@ function About() {
         </p>
         <div className="scroll-line"></div>
       </div>
-
+        <div className='imgIcon'>
         <img src={profilePic} alt="Profile" className="profile-pic" />
-
+          <div className='iconOutline'> 
+          <a href="https://github.com/ericL0u" target="_blank" rel="noopener noreferrer">
+          <button className='Icons'><FaGithub /></button>
+          </a>
+          <a href="https://www.linkedin.com/in/eric-lou-00000k0l/" target="_blank" rel="noopener noreferrer">
+          <button className='Icons'><FaLinkedin /></button>
+          </a>
+          </div>
+        </div>
     </section>
   );
 }

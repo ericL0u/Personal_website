@@ -2,6 +2,7 @@ import React from "react";
 import "./Work.css";
 import openSourceLogo from "../assets/logo.png";
 import projectImg1 from "../assets/data.png";
+import projectImg2 from "../assets/linkedin.png";
 
 import "./styles/styles.css";
 
@@ -41,8 +42,8 @@ function Work() {
       user verification, authentication, course recommandation tracking, favorite counts.`,
 
       descrip2: "Skills involved: Docker, Docker compose, SQL, Express, Sequelize, Postman, RESTful",
-      img: "EMPTY",
-      imgTitle: "EMPTY",
+      img: projectImg2,
+      imgTitle: "linkedin learning",
     },
     
     3: {

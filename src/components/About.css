@@ -45,11 +45,34 @@
     animation: fadeIn 1s ease-in-out forwards;
     margin-bottom: 500px;
   }
-  
+  .imgIcon{
+    display: flex;
+    flex-direction: column;
+  }
+  .iconOutline{
+    display: flex;
+    flex-direction: row;
+  }
+  .Icons {
+    margin-bottom: 450px;
+    margin-left: 75px;
+    width: 50px; /* Increase button width */
+    height: 50px; /* Set button height */
+    background: none; /* Remove background color */
+    border: none; /* Remove border */
+    outline: none; /* Remove outline */
+    cursor: pointer; /* Change cursor to pointer */
+    display: flex; /* Center the icon */
+    align-items: center; /* Vertically center the icon */
+    justify-content: center; /* Horizontally center the icon */
+  }
+  .Icons svg {
+    font-size: 50px; /* Enlarge the icon */
+  }
   .profile-pic {
     width: 275px; /* Adjust the size as needed */
-    margin-bottom: 500px;
     margin-left: 40px;
+    margin-bottom: 40px;
   }
   
   h1 {
