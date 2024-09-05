@@ -33,6 +33,9 @@
   .description{
     font-size: 2.4rem;
     text-align: left;
+    opacity: 0; /* Start fully transparent */
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 1s; 
   }
   
   .about-content {
@@ -62,12 +65,26 @@
   .scroll-text {
     margin-left: 250px;
     margin-top: 40px;
-    font-size: 1rem;
+    font-size: 2rem;
     color: #a0a0a0;
     letter-spacing: 3px;
     display: inline-block;
+    opacity: 0; /* Start fully transparent */
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 2s; 
   }
   
+  .scroll-line {
+    position: absolute;
+    margin-left: 295px;
+    top: 500px; /* Start from 400px above the bottom */
+    width: 1px;
+    height: 500px;
+    background-color: #a0a0a0;
+    animation: slideUp 2s ease-out forwards; /* 2 seconds for sliding up */
+  }
+  
+
   .scroll-text span {
     display: inline-block;
     animation: jump 1.4s ease-in-out infinite;
@@ -108,17 +125,6 @@
     }
   }
 
-  .scroll-line {
-    position: absolute;
-    margin-left: 250px;
-    top: 500px; /* Start from 400px above the bottom */
-    width: 1px;
-    height: 500px;
-    background-color: #a0a0a0;
-  }
-  
- 
-
   @keyframes fadeIn {
     0% {
       opacity: 0; /* Fully transparent */
@@ -127,3 +133,21 @@
       opacity: 1; /* Fully visible */
     }
   }
+  
+
+
+  @keyframes slideUp {
+    0% {
+      top: 100%; /* Start the scroll line from the bottom (off-screen) */
+      opacity: 1; /* Start fully transparent */
+    }
+    100% {
+      top: 500px; /* End at the final position (adjust as needed) */
+      opacity: 1; /* Fully visible */
+    }
+  }
+ 
+
+ 
+
+ 
