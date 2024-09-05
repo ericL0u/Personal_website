@@ -5,7 +5,7 @@ import './styles/styles.css'
 function Home() {
   return (
     <section className="home-section">
-      <div className="home-details">
+      <div className="home-details bitter-home">
         <h2>Let's work together
         <span className='dot'>!</span>
         </h2>
@@ -14,7 +14,7 @@ function Home() {
           I am also someone who takes initiative and able to come up with 
           <strong> unique and creative</strong> solutions to solve problems.
         </p>
-        <button className="home-button">About my approach</button>
+        <button className="home-button bitter-home">About my approach</button>
       </div>
     </section>
   );

@@ -1,15 +1,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
-
-  html{
-  font-size: 62.5%;
-  -webkit-font-smoothing: antialiased;
-  }
   .bitter-title {
     font-family: "Bitter", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+  }
+
+  html{
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
   }
 
 .about-section {
@@ -77,11 +77,14 @@
   .scroll-line {
     position: absolute;
     margin-left: 295px;
-    top: 500px; /* Start from 400px above the bottom */
     width: 1px;
     height: 500px;
+
     background-color: #a0a0a0;
-    animation: slideUp 2s ease-out forwards; /* 2 seconds for sliding up */
+    top: 100vh; /* Start just below the viewport */
+    opacity: 1; /* Keep the line visible */
+    animation: slideUp 1.25s ease-out forwards; /* 2 seconds for sliding up */
+    animation-delay: 2s;
   }
   
 
@@ -138,12 +141,12 @@
 
   @keyframes slideUp {
     0% {
-      top: 100%; /* Start the scroll line from the bottom (off-screen) */
-      opacity: 1; /* Start fully transparent */
+      top: 300%; /* Start well below the screen (150% of the viewport height) */
+      opacity: 1; /* Ensure the line is fully visible */
     }
     100% {
       top: 500px; /* End at the final position (adjust as needed) */
-      opacity: 1; /* Fully visible */
+      opacity: 1; /* The line remains fully visible */
     }
   }
  

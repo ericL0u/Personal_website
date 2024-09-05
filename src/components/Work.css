@@ -1,17 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+
+  .work-font {
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+
 .padLeft {
   padding-left: 250px;
 }
 
 .descrip {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1.8rem;
   max-width: 40%;
 }
 
-.projectDesc {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
 
 .rigthShift40 {
   max-width: 20%;
@@ -38,10 +44,6 @@
   background-size: 10px 10px; /* Adjust the spacing between dots */
 }
 
-.work-font {
-  font-family: "Bitter", serif;
-}
-
 .flex-Col {
   display: flex;
   flex-direction: column;
@@ -59,16 +61,19 @@
 }
 
 .work-section h2 {
-  font-size: 28px;
+  font-size: 3.8rem;
   color: #1a2a3a;
   margin-bottom: 20px;
   justify-self: start;
 }
 
 .work-section p {
-  font-size: 1rem;
+  font-size: 1.8rem;
   color: #1a2a3a;
   margin-bottom: 40px;
+  margin-top: 40px;
+  line-height: 1.6;
+  width: 750px;
 }
 
 .work-item {
@@ -96,14 +101,15 @@
   text-align: left;
 }
 
-.work-details h3 {
-  font-size: 1.5rem;
+.desc {
+  font-size: 3.8rem;
   color: #1a2a3a;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .work-details p {
-  font-size: 1rem;
+  font-size: 1.8rem;
   color: #1a2a3a;
   margin-bottom: 10px;
   margin-right: 100px;
@@ -111,7 +117,7 @@
 
 .work-button {
   align-self: flex-start; /* Align the button to the left */
-  font-size: 1rem;
+  font-size: 1.8rem;
   color: #a333c8;
   border: 2px solid #a333c8;
   padding: 10px 20px;

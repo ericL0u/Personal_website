@@ -7,16 +7,16 @@ import "./styles/styles.css";
 
 const Project = ({ title, descrip1, descrip2, img, imgTitle }) => {
   return (
-    <div className="work-item padLeft">
+    <div className="work-item padLeft ">
       <img src={img} alt={imgTitle} className="work-logo" />
-      <div className="flex-Col">
-        <div className="work-details">
-          <h3>{title}</h3>
-          <p className="projectDesc">{descrip1}</p>
-          <p className="projectDesc" ><strong>{descrip2}</strong></p>
+      <div className="flex-Col work-font">
+        <div className="work-font">
+          <div className="desc">{title}</div>
+          <p className="work-section work-font">{descrip1}</p>
+          <p className="projectDesc work-font" ><strong>{descrip2}</strong></p>
         </div>
         {/* Changed Router Link */}
-        <button className="work-button">Get {title}</button> 
+        <button className="work-button work-font">Get {title}</button> 
       </div>
     </div>
   );
@@ -27,9 +27,9 @@ function Work() {
     1: {
       title: "Automation display and fetching of KPIs",
       descrip1:
-        `This is an key project constructed for my previous intern in displaying KPIs that are involved within the work place. 
-        All internal users are able to view current progress and any live update that occurs. 
-        Authenticated users are also able to alter data. `,
+        `This is an project constructed for IKO North America in displaying KPIs that are involved within the work place. 
+        All internal users are able to view current progress numerics and any live update that occurs. 
+        Authenticated users are also able to update data. `,
       descrip2:
         "Skills involved: React, Flask, MongoDB, Python",
       img: projectImg1,

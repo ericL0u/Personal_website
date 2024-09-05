@@ -13,23 +13,21 @@
   }
   
   .logo {
-    width: 40px; /* Adjust size as needed */
+    width: 80px; /* Adjust size as needed */
     height: auto;
   }
   
   .menu {
-    display: inline-block;
-    margin-left: 10px;
-    font-size: 18px;
-    letter-spacing: 2px;
-    color: #1a2a3a;
-    background: none; /* Remove background color */
-    border: none; /* Remove border */
-    padding: 0; /* Remove default padding */
-    cursor: pointer; /* Change cursor to pointer */
-    color: inherit; /* Inherit text color */
-    font: inherit; /* Inherit font properties */
+    padding: 5px 10px; /* Adjust padding to increase the button size */
+    font-size: 20px; /* Ensure the text is 20px */
+    letter-spacing: 4px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: inherit;
   }
+  
+  
   
   .header-right .talk {
     font-size: 18px;
