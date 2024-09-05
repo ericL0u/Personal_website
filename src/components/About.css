@@ -1,23 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+
+  html{
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  }
+  .bitter-title {
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
 .about-section {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    text-align: center;
-    height: 610px;
+    justify-content: center; /* Center horizontally */
+    height: 810px;
     padding: 50px 20px;
     background-color: #f0f6ff;
     position: relative;
   }
   
+
+  .intro{
+    text-align: left;
+    font-size: 8rem;
+    text-shadow: -1px -1px var(--bg), 0 -1px var(--bg), 1px -1px var(--bg), -1px 0 var(--bg), 1px 0 var(--bg), -1px 1px var(--bg), 0 1px var(--bg), 1px 1px var(--bg), -2px -2px var(--bg), 0 -2px var(--bg), 2px -2px var(--bg), -2px 0 var(--bg), 2px 0 var(--bg), -2px 2px var(--bg), 0 2px var(--bg), 2px 2px var(--bg), -3px -3px var(--bg), 0 -3px var(--bg), 3px -3px var(--bg), -3px 0 var(--bg), 3px 0 var(--bg), -3px 3px var(--bg), 0 3px var(--bg), 3px 3px var(--bg), -4px -4px var(--bg), 0 -4px var(--bg), 4px -4px var(--bg), -4px 0 var(--bg), 4px 0 var(--bg), -4px 4px var(--bg), 0 4px var(--bg), 4px 4px var(--bg);
+  }
+
+  .description{
+    font-size: 2.4rem;
+    text-align: left;
+  }
+  
   .about-content {
-    max-width: 600px;
+    max-width: 700px;
     position: relative;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    margin-bottom: 500px;
   }
   
   .profile-pic {
-    width: 150px; /* Adjust the size as needed */
-    height: auto;
-    margin-bottom: 20px;
+    width: 275px; /* Adjust the size as needed */
+    margin-bottom: 500px;
+    margin-left: 40px;
   }
   
   h1 {
@@ -31,41 +60,70 @@
   }
   
   .scroll-text {
+    margin-left: 250px;
     margin-top: 40px;
     font-size: 1rem;
     color: #a0a0a0;
     letter-spacing: 3px;
+    display: inline-block;
   }
   
-  .scroll-line {
-    position: absolute;
-    left: 50%;
-    bottom: 20px; /* Start from 400px above the bottom */
-    width: 1px;
-    height: 250px; /* Initial height */
-    background-color: #a0a0a0;
-    animation: scroll-line 2s infinite;
-    transform: translateX(-50%); /* Center the line */
+  .scroll-text span {
+    display: inline-block;
+    animation: jump 1.4s ease-in-out infinite;
   }
   
-  .profile-pic{
-
-    width: 200px;
-
+  .scroll-text span:nth-child(1) {
+    animation-delay: 0s;
   }
   
-  @keyframes scroll-line {
-    0% {
-      bottom: 10px; /* Start from 10px above the bottom */
-      height: 250px;
+  .scroll-text span:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  
+  .scroll-text span:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  
+  .scroll-text span:nth-child(4) {
+    animation-delay: 0.3s;
+  }
+  
+  .scroll-text span:nth-child(5) {
+    animation-delay: 0.4s;
+  }
+  
+  .scroll-text span:nth-child(6) {
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes jump {
+    0%, 20%, 100% {
+      transform: translateY(0); /* Start and end at the original position */
+      color: #a0a0a0; /* Original color */
     }
     50% {
-      bottom: 10px; /* Keep bottom fixed */
-      height: 290px; /* Increase the height */
-    }
-    100% {
-      bottom: 10px; /* Return to the initial bottom position */
-      height: 250px;
+      transform: translateY(-10px); /* Jump up by 10px */
+      color: #b3d9ff; /* Light blue color during the jump */
     }
   }
+
+  .scroll-line {
+    position: absolute;
+    margin-left: 250px;
+    top: 500px; /* Start from 400px above the bottom */
+    width: 1px;
+    height: 500px;
+    background-color: #a0a0a0;
+  }
   
+ 
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0; /* Fully transparent */
+    }
+    100% {
+      opacity: 1; /* Fully visible */
+    }
+  }
