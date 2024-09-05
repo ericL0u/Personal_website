@@ -6,3 +6,8 @@ export default defineConfig({
   base: '/Personal_website/',
   plugins: [react()]
 })
+
+
+// build and deploy on github
+// npm run build
+// npm run deploy
