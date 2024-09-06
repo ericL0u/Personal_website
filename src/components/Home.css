@@ -110,7 +110,7 @@
     background-color: rgb(169, 203, 255); 
     z-index: 99;
     transform: translateY(-100%); 
-    transition: background-color 0.5s ease, transform 1s ease;
+    transition: background-color 0.5s ease, transform 0.5s ease;
   }
   
   .screen-cover.active {

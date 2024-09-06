@@ -35,11 +35,11 @@ function Home() {
     console.log(isTransitioning)
     setTimeout(() => {
       setColorChanged(true);
-    }, 1000); 
+    }, 500); 
 
     setTimeout(() => {
       navigate('/Personal_website/work/1'); 
-    }, 1250); 
+    }, 1050); 
   };
 
   return (
