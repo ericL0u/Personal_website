@@ -107,10 +107,10 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(254, 25, 0, 0.87); 
+    background-color: rgb(169, 203, 255); 
     z-index: 99;
     transform: translateY(-100%); 
-    transition: background-color 1s ease, transform 1s ease;
+    transition: background-color 0.5s ease, transform 1s ease;
   }
   
   .screen-cover.active {
@@ -118,6 +118,6 @@
   }
 
   .screen-cover.color-changed {
-    background-color: blue; 
+    background-color: rgb(255, 199, 166); 
   }
   

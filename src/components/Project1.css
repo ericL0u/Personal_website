@@ -5,15 +5,15 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: blue; /* Color should match the final color from previous route */
+    background-color: rgb(255, 199, 166); /* Color should match the final color from previous route */
     z-index: 99;
-    transition: transform 0.5s ease; /* Transition for the final lift-up */
+    transition: transform 0.25s ease; /* Transition for the final lift-up */
   }
   
   .projectScreen.final {
     transform: translateY(-100%); /* Move the cover back up to reveal new content */
   }
-  
+    
   .new-content2 {
     position: relative;
     z-index: 1;
@@ -28,3 +28,7 @@
     transition-delay: 1s; /* Delay to reveal after the screen lifts */
   }
   
+  .Main{
+    background-color:rgb(246, 210, 189) ;
+    height: 100vh;
+  }

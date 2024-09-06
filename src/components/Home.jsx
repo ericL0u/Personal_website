@@ -6,7 +6,6 @@ import './styles/styles.css'
 function Home() {
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [colorChanged, setColorChanged] = useState(false);
-  const [finalMove, setFinalMove] = useState(false);
 
   const navigate = useNavigate();
 
@@ -36,11 +35,11 @@ function Home() {
     console.log(isTransitioning)
     setTimeout(() => {
       setColorChanged(true);
-    }, 1500); 
+    }, 1000); 
 
     setTimeout(() => {
       navigate('/Personal_website/work/1'); 
-    }, 2000); 
+    }, 1250); 
   };
 
   return (
