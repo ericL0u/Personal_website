@@ -92,7 +92,7 @@
     color: #a0a0a0;
     letter-spacing: 3px;
     display: inline-block;
-    opacity: 0; /* Start fully transparent */
+    opacity: 0; 
     animation: fadeIn 1s ease-out forwards;
     animation-delay: 2s; 
   }
@@ -104,9 +104,9 @@
     height: 500px;
 
     background-color: #a0a0a0;
-    top: 100vh; /* Start just below the viewport */
-    opacity: 1; /* Keep the line visible */
-    animation: slideUp 1.25s ease-out forwards; /* 2 seconds for sliding up */
+    top: 100vh; 
+    opacity: 1; 
+    animation: slideUp 1.25s ease-out forwards; 
     animation-delay: 2s;
   }
   
@@ -142,21 +142,21 @@
   
   @keyframes jump {
     0%, 20%, 100% {
-      transform: translateY(0); /* Start and end at the original position */
-      color: #a0a0a0; /* Original color */
+      transform: translateY(0); 
+      color: #a0a0a0; 
     }
     50% {
-      transform: translateY(-10px); /* Jump up by 10px */
-      color: #b3d9ff; /* Light blue color during the jump */
+      transform: translateY(-10px); 
+      color: #b3d9ff; 
     }
   }
 
   @keyframes fadeIn {
     0% {
-      opacity: 0; /* Fully transparent */
+      opacity: 0; 
     }
     100% {
-      opacity: 1; /* Fully visible */
+      opacity: 1; 
     }
   }
   
@@ -164,12 +164,12 @@
 
   @keyframes slideUp {
     0% {
-      top: 300%; /* Start well below the screen (150% of the viewport height) */
-      opacity: 1; /* Ensure the line is fully visible */
+      top: 300%; 
+      opacity: 1; 
     }
     100% {
-      top: 500px; /* End at the final position (adjust as needed) */
-      opacity: 1; /* The line remains fully visible */
+      top: 500px; 
+      opacity: 1; 
     }
   }
  
