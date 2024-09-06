@@ -13,7 +13,7 @@ function NewPage() {
 
   return (
     <div>
-    <Header />
+    <Header bgColor={"#f6d2bd"}/>
     <section className="Main">
       {/* Lift up cover animation must have projectScreen */}
       <div className={`projectScreen ${finalMove ? 'final' : ''}`}></div>

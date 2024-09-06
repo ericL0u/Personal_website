@@ -4,14 +4,14 @@ import logo from '../assets/logo.png';
 import './styles/styles.css'
 import { Navigate, useNavigate } from 'react-router-dom';
 
-function Header() {
+function Header({bgColor}) {
 
   const navigate = useNavigate();
   const LogoButtonHandler = () => {
     navigate('/Personal_website/')
   }
   return (
-    <header className="header">
+    <header className="header" style={{backgroundColor: bgColor}}>
       <div className="header-left">
 
         <button className='LogoButton' onClick={LogoButtonHandler} >

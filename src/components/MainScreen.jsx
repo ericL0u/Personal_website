@@ -9,7 +9,7 @@ function mainScreen() {
   // const mainColor = rbg()
     return (
       <div className='page'>
-        <Header />
+        <Header  />
         <main>
   
           <About />
