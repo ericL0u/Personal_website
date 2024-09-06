@@ -105,7 +105,7 @@
 
     background-color: #a0a0a0;
     top: 100vh; 
-    opacity: 1; 
+    opacity: 0; 
     animation: slideUp 1.25s ease-out forwards; 
     animation-delay: 2s;
   }

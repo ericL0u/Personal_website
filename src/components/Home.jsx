@@ -1,8 +1,15 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Home.css';
 import './styles/styles.css'
 
 function Home() {
+  const [isTransitioning, setIsTransitioning] = useState(false);
+  const [colorChanged, setColorChanged] = useState(false);
+  const [finalMove, setFinalMove] = useState(false);
+
+  const navigate = useNavigate();
+
   useEffect(() => {
     const header = document.querySelector('.home-details h2');
     const paragraph = document.querySelector('.home-details p')
@@ -23,11 +30,22 @@ function Home() {
     observer.observe(header);
   }, [])
 
+  const handleTransition = () => {
 
+    setIsTransitioning(true);
+    console.log(isTransitioning)
+    setTimeout(() => {
+      setColorChanged(true);
+    }, 1500); 
 
+    setTimeout(() => {
+      navigate('/Personal_website/work/1'); 
+    }, 2000); 
+  };
 
   return (
     <section className="home-section">
+      <div className='screen-cover'></div>
       <div className="home-details bitter-home">
         <h2>Let's work together
         <span className='dot'>!</span>
@@ -37,8 +55,10 @@ function Home() {
           I am also someone who takes initiative and able to come up with 
           <strong> unique and creative</strong> solutions to solve problems.
         </p>
-        <button className="home-button bitter-home">More about me</button>
+        <button className="home-button bitter-home"  onClick={handleTransition}>More about me</button>
       </div>
+      
+      <div className={`screen-cover ${isTransitioning ? 'active' : ''} ${colorChanged ? 'color-changed' : ''}`}></div>
     </section>
   );
 }

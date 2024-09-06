@@ -99,3 +99,25 @@
     transform: scaleX(1);
   }
   
+
+
+  .screen-cover {
+    position: fixed;
+    top: -100vh; 
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(254, 25, 0, 0.87); 
+    z-index: 99;
+    transform: translateY(-100%); 
+    transition: background-color 1s ease, transform 1s ease;
+  }
+  
+  .screen-cover.active {
+    transform: translateY(100%); 
+  }
+
+  .screen-cover.color-changed {
+    background-color: blue; 
+  }
+  
