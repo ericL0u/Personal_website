@@ -54,11 +54,11 @@ function Work() {
       imgTitle: "Roulette",
     },
     4: {
-      title: "EMPTY",
-      descrip1: "EMPTY",
-      descrip2: "EMPTY",
-      img: "EMPTY",
-      imgTitle: "EMPTY",
+      title: "Interactive Virtual Roulette Game",
+      descrip1: "This project presents an interactive simulation of a traditional roulette game, incorporating various betting systems and strategies. Users can place bets on different outcomes and update game displays based on the result, providing an intuitive understanding of roulette game mechanics, payout ratios, and betting strategies in a virtual environment.",
+      descrip2: "Skills: C, image rendering with uint16_t",
+      img: projectImg3,
+      imgTitle: "Roulette",
     },
   };
 

@@ -1,23 +1,15 @@
 import React from 'react';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Home from './components/Home';
-import About from './components/About';
-import Work from './components/Work'
+import Mainscreen from './components/MainScreen';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // Import Routers
 
 function App() {
   return (
-    <div className='page'>
-      <Header />
-      <main>
-
-        <About />
-        <Home />
-        <Work />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+    <Routes>
+      <Route path="/Personal_website/" element={<Mainscreen />} />
+    </Routes>
+  </Router>
   );
 }
 
