@@ -2,12 +2,22 @@ import React from 'react';
 import './Header.css';
 import logo from '../assets/logo.png';
 import './styles/styles.css'
+import { Navigate, useNavigate } from 'react-router-dom';
 
 function Header() {
+
+  const navigate = useNavigate();
+  const LogoButtonHandler = () => {
+    navigate('/Personal_website/')
+  }
   return (
     <header className="header">
       <div className="header-left">
+
+        <button className='LogoButton' onClick={LogoButtonHandler} >
         <img src={logo} alt="Logo" className="profile_pic" />
+        </button>
+
         <button className="menu" >        
         MENU
         </button>

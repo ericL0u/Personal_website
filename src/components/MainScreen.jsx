@@ -6,6 +6,7 @@ import About from './About';
 import Work from './Work'
 
 function mainScreen() {
+  // const mainColor = rbg()
     return (
       <div className='page'>
         <Header />

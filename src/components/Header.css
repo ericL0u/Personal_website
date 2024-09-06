@@ -7,6 +7,20 @@
     background-color: #f0f6ff;
   }
   
+  .LogoButton{
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 50px; /* Increase button width */
+    height: 50px; /* Set button height */
+    background: none; /* Remove background color */
+    border: none; /* Remove border */
+    outline: none; /* Remove outline */
+    cursor: pointer; /* Change cursor to pointer */
+    display: flex; /* Center the icon */
+    align-items: center; /* Vertically center the icon */
+    justify-content: center; /* Horizontally center the icon */
+  }
+
   .header-left, .header-right {
     display: flex;
     align-items: center;
