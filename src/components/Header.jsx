@@ -2,17 +2,22 @@ import React,{useEffect, useState} from 'react';
 import './Header.css';
 import logo from '../assets/logo.png';
 import './styles/styles.css'
-import { Navigate, useNavigate } from 'react-router-dom';
+import { Navigate, useNavigate,useLocation  } from 'react-router-dom';
 
 function Header({bgColor}) {
   const [isTransitioning, setIsTransitioning] = useState(false); 
   const [finalMove, setFinalMove] = useState(false);
 
   const navigate = useNavigate();
+  const currLoc = useLocation();
 
   const LogoButtonHandler = () => {
+    console.log(currLoc.pathname)
+    if (currLoc.pathname != '/Personal_website/'){
+
+    
     setIsTransitioning(true);
-    console.log(isTransitioning)
+
     setTimeout(() => {
       setFinalMove(true);
     }, 1000);
@@ -20,6 +25,7 @@ function Header({bgColor}) {
     setTimeout(() => {
       navigate('/Personal_website/');
     }, 1200); 
+  }
   }
 
 
