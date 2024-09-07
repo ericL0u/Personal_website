@@ -5,6 +5,7 @@ import 'react-vertical-timeline-component/style.min.css';
 
 import './ProjectIntro.css';
 import './styles/styles.css'
+import { TbTextSize } from 'react-icons/tb';
 
 function ProjectIntro() {
   const [isTransitioning, setIsTransitioning] = useState(false);
@@ -13,7 +14,7 @@ function ProjectIntro() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const header = document.querySelector('.ttle');
+    const header = document.querySelector('.title');
     const paragraph = document.querySelector('.description')
 
     const observer = new IntersectionObserver((entries) => {
@@ -33,110 +34,95 @@ function ProjectIntro() {
 
 
   return (
+    <>
     <div className='container bitter-home'>
       <div className='title'>
-        Title 
+        Experience Timeline 
       </div>
       <div className='description'>
-        this is a brief summary of the project 
+        This is an overview of my development journey!
       </div>
-      
-<VerticalTimeline>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--work"
-    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-    date="2011 - present"
-    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    // icon={<WorkIcon />}
-  >
-    <h3 className="vertical-timeline-element-title">Creative Director</h3>
-    <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-    <p>
-      Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-    </p>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--work"
-    date="2010 - 2011"
-    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    // icon={<WorkIcon />}
-  >
-    <h3 className="vertical-timeline-element-title">Art Director</h3>
-    <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-    <p>
-      Creative Direction, User Experience, Visual Design, SEO, Online Marketing
-    </p>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--work"
-    date="2008 - 2010"
-    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    // icon={<WorkIcon />}
-  >
-    <h3 className="vertical-timeline-element-title">Web Designer</h3>
-    <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
-    <p>
-      User Experience, Visual Design
-    </p>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--work"
-    date="2006 - 2008"
-    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    // icon={<WorkIcon />}
-  >
-    <h3 className="vertical-timeline-element-title">Web Designer</h3>
-    <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-    <p>
-      User Experience, Visual Design
-    </p>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--education"
-    date="April 2013"
-    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    // icon={<WorkIcon />}
-  >
-    <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
-    <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-    <p>
-      Strategy, Social Media
-    </p>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--education"
-    date="November 2012"
-    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    // icon={<WorkIcon />}
-  >
-    <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
-    <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-    <p>
-      Creative Direction, User Experience, Visual Design
-    </p>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--education"
-    date="2002 - 2006"
-    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-    // icon={<WorkIcon />}
-  >
-    <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
-    <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
-    <p>
-      Creative Direction, Visual Design
-    </p>
-  </VerticalTimelineElement>
-  <VerticalTimelineElement
-    iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-    // icon={<WorkIcon />}
-  />
-</VerticalTimeline>
-
-
-
     </div>
+    <div className='TimeLineContainer normalFont'>
+    <VerticalTimeline>
+
+    <VerticalTimelineElement
+      className="vertical-timeline-element--work bitter-home"
+      date="2022-present"
+      iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+      contentStyle={{width: '350px', marginLeft:'150px'}}
+      dateClassName='date-left date-font'
+    >
+      <h3 className="vertical-timeline-element-title">Computer Engineering Student - University of Toronto</h3>
+      <h4 className="vertical-timeline-element-subtitle">Toronto, CA</h4>
+      <p style={{ fontSize: '1.6rem'}}>
+        Enrolled in ECE program of UofT.
+      </p>
+    </VerticalTimelineElement>
+    <VerticalTimelineElement
+      className="vertical-timeline-element--work bitter-home"
+      date="2023 May - 2023 Sept"
+      dateClassName='date-right date-font'
+      contentStyle={{width: '350px', marginRight:'150px'}}
+      iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+    >
+      <h3 className="vertical-timeline-element-title">Finance Intern - Shenwan Hongyuan Securities </h3>
+      <h4 className="vertical-timeline-element-subtitle">Shanghai, CN</h4>
+      <p style={{ fontSize: '1.6rem'}}>
+        Intern focused on sector rotation, quatitative analysis.
+      </p>
+    </VerticalTimelineElement>
+
+    <VerticalTimelineElement
+      className="vertical-timeline-element--work bitter-home"
+      date="2023 - present"
+      contentStyle={{width: '350px', marginLeft:'150px'}}
+      dateClassName='date-left date-font'
+
+      iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+    >
+      <h3 className="vertical-timeline-element-title">Lead in simulation propulsion - University of Toronto Aerospace Team</h3>
+      <h4 className="vertical-timeline-element-subtitle">Toronto, CA</h4>
+      <p style={{ fontSize: '1.6rem'}}>
+        Take on the role in designing & programming 6DOF simulator for rocket trajectory.
+      </p>
+    </VerticalTimelineElement>
+    <VerticalTimelineElement
+      className="vertical-timeline-element--education bitter-home"
+      date="2024 May - 2024 Sept"
+      dateClassName='date-right date-font'
+      contentStyle={{width: '350px', marginRight:'150px'}}
+      iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+      // icon={<WorkIcon />}
+    >
+      <h3 className="vertical-timeline-element-title">Full stack developer/Automation Technician - IKO North America</h3>
+      <h4 className="vertical-timeline-element-subtitle">Brampton, CA</h4>
+      <p style={{ fontSize: '1.6rem'}}>
+        Software intern at IKO, designed automation systems, full stack KPI webpages and widget display, automation on 5S audits.
+      </p>
+    </VerticalTimelineElement>
+    <VerticalTimelineElement
+      className="vertical-timeline-element--education bitter-home"
+      date="2025 May - ???"
+      contentStyle={{width: '350px', marginLeft:'150px'}}
+      dateClassName='date-left date-font'
+
+      iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+      // icon={<WorkIcon />}
+    >
+      <h3 className="vertical-timeline-element-title">Incoming!</h3>
+      <h4 className="vertical-timeline-element-subtitle">places</h4>
+      <p style={{ fontSize: '1.6rem'}}>
+      Incoming!
+      </p>
+    </VerticalTimelineElement>
+
+  </VerticalTimeline>
+
+  
+  </div>
+  </>
+    
   );
 }
 
