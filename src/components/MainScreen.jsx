@@ -1,23 +1,39 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import Home from './Home';
 import About from './About';
 import Work from './Work'
+import './MainScreen.css'
 
 function mainScreen() {
-  // const mainColor = rbg()
+  const [finalMove, setFinalMove] = useState(false);
+  const [showComponents, setShowComponents] = useState(false);
+  useEffect(() => {
+
+    setTimeout(() => {
+      setFinalMove(true); 
+      console.log(finalMove)
+    }, 500); 
+
+  }, []);
+
     return (
       <div className='page'>
-        <Header  />
-        <main>
-  
-          <About />
-          <Home />
-          <Work />
-        </main>
-        <Footer />
-      </div>
+      <div
+        className={`animatedScreen1 ${finalMove ? 'final' : ''}`}
+      ></div>
+      <Header />
+        <>
+          <main>
+            <About />
+            <Home />
+            <Work />
+          </main>
+          <Footer />
+        </>
+
+    </div>
     );
   }
   

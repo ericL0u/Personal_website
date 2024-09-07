@@ -38,7 +38,7 @@ function Home() {
     }, 500); 
 
     setTimeout(() => {
-      navigate('/Personal_website/work/1'); 
+      navigate('/Personal_website/about-me/'); 
     }, 1050); 
   };
 

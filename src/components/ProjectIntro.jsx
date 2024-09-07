@@ -111,7 +111,7 @@ function ProjectIntro() {
       // icon={<WorkIcon />}
     >
       <h3 className="vertical-timeline-element-title">Incoming!</h3>
-      <h4 className="vertical-timeline-element-subtitle">places</h4>
+      <h4 className="vertical-timeline-element-subtitle"></h4>
       <p style={{ fontSize: '1.6rem'}}>
       Incoming!
       </p>

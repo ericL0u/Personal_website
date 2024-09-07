@@ -27,15 +27,16 @@
   .intro{
     text-align: left;
     font-size: 8rem;
+
     text-shadow: -1px -1px var(--bg), 0 -1px var(--bg), 1px -1px var(--bg), -1px 0 var(--bg), 1px 0 var(--bg), -1px 1px var(--bg), 0 1px var(--bg), 1px 1px var(--bg), -2px -2px var(--bg), 0 -2px var(--bg), 2px -2px var(--bg), -2px 0 var(--bg), 2px 0 var(--bg), -2px 2px var(--bg), 0 2px var(--bg), 2px 2px var(--bg), -3px -3px var(--bg), 0 -3px var(--bg), 3px -3px var(--bg), -3px 0 var(--bg), 3px 0 var(--bg), -3px 3px var(--bg), 0 3px var(--bg), 3px 3px var(--bg), -4px -4px var(--bg), 0 -4px var(--bg), 4px -4px var(--bg), -4px 0 var(--bg), 4px 0 var(--bg), -4px 4px var(--bg), 0 4px var(--bg), 4px 4px var(--bg);
   }
 
   .description{
     font-size: 2.4rem;
     text-align: left;
-    opacity: 0; /* Start fully transparent */
+    opacity: 0; 
     animation: fadeIn 1s ease-out forwards;
-    animation-delay: 1s; 
+    animation-delay: 2.5s; 
   }
   
   .about-content {
@@ -43,7 +44,9 @@
     position: relative;
     opacity: 0;
     animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 1.5s;
     margin-bottom: 500px;
+
   }
   .imgIcon{
     display: flex;
@@ -94,7 +97,7 @@
     display: inline-block;
     opacity: 0; 
     animation: fadeIn 1s ease-out forwards;
-    animation-delay: 2s; 
+    animation-delay: 3s; 
   }
   
   .scroll-line {
@@ -107,7 +110,7 @@
     top: 100vh; 
     opacity: 0; 
     animation: slideUp 1.25s ease-out forwards; 
-    animation-delay: 2s;
+    animation-delay: 3.2s;
   }
   
 

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Project1.css'; // Import your styles
 import Header from './Header';
 import ProjectIntro from './ProjectIntro'
-
+import Footer from './Footer';
 function NewPage() {
   const [finalMove, setFinalMove] = useState(false);
 
@@ -18,10 +18,9 @@ function NewPage() {
     <section className="Main">
       {/* Lift up cover animation must have projectScreen */}
     <div className={`projectScreen ${finalMove ? 'final' : ''}`}></div>
-
     <ProjectIntro></ProjectIntro>
-
     </section>
+    <Footer></Footer>
     </div>
   );
 }

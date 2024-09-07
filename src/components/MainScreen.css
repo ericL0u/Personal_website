@@ -1,0 +1,21 @@
+.animatedScreen1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(169, 203, 255); /* Adjust this to the desired color */
+    z-index: 9999; /* Ensure it's above everything */
+    transition: transform 0.5s; /* Ensure smooth transition */
+    transform: translateY(0); /* Initially in view */
+  }
+  
+  .animatedScreen1.final {
+    transform: translateY(-100%); /* Move the cover out of view */
+    
+  }
+  
+
+  .page{
+    background-color:#f0f6ff ;
+  }
