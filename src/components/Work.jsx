@@ -47,9 +47,9 @@ function Work() {
     },
     
     3: {
-      title: "Interactive Virtual Roulette Game",
-      descrip1: "This project presents an interactive simulation of a traditional roulette game, incorporating various betting systems and strategies. Users can place bets on different outcomes and update game displays based on the result, providing an intuitive understanding of roulette game mechanics, payout ratios, and betting strategies in a virtual environment.",
-      descrip2: "Skills: C, image rendering with uint16_t",
+      title: "Personal Website",
+      descrip1: "Interactive personal website with animations.",
+      descrip2: "Skills: React, html, css, javascript",
       img: projectImg3,
       imgTitle: "Roulette",
     },
