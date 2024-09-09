@@ -3,6 +3,7 @@ import "./Work.css";
 import openSourceLogo from "../assets/logo.png";
 import projectImg1 from "../assets/data.png";
 import projectImg2 from "../assets/linkedin.png";
+import projectImg4 from "../assets/website.png";
 import projectImg3 from "../assets/Loading_Screen.png";
 import "./styles/styles.css";
 
@@ -50,8 +51,8 @@ function Work() {
       title: "Personal Website",
       descrip1: "Interactive personal website with animations.",
       descrip2: "Skills: React, html, css, javascript",
-      img: projectImg3,
-      imgTitle: "Roulette",
+      img: projectImg4,
+      imgTitle: "website",
     },
     4: {
       title: "Interactive Virtual Roulette Game",
