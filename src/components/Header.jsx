@@ -25,6 +25,7 @@ function Header({bgColor}) {
     setTimeout(() => {
       navigate('/Personal_website/');
     }, 1200); 
+    
   }
   }
 
