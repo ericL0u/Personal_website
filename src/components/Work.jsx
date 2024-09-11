@@ -5,19 +5,23 @@ import projectImg1 from "../assets/data.png";
 import projectImg2 from "../assets/linkedin.png";
 import projectImg4 from "../assets/website.png";
 import projectImg3 from "../assets/Loading_Screen.png";
+import projectImg6 from "../assets/elevators.jpg";
+import projectImg5 from "../assets/map.png";
 import "./styles/styles.css";
 
-const Project = ({ title, descrip1, descrip2, img, imgTitle }) => {
+const Project = ({ projectkey, title, descrip1, descrip2, img, imgTitle }) => {
+   const imgStyle = projectkey === 5 ? {} : {};
+  //  "margin-top": '100px', width:'300px', height:'auto'
   return (
     <div className="work-item padLeft ">
-      <img src={img} alt={imgTitle} className="work-logo" />
+      <img src={img} alt={imgTitle} className="work-logo" style={imgStyle}/>
       <div className="flex-Col work-font">
         <div className="work-font">
           <div className="desc">{title}</div>
           <p className="work-section work-font">{descrip1}</p>
           <p className="projectDesc work-font" ><strong>{descrip2}</strong></p>
         </div>
-        {/* Changed Router Link */}
+
         <button className="work-button work-font">Get {title}</button> 
       </div>
     </div>
@@ -61,6 +65,31 @@ function Work() {
       img: projectImg3,
       imgTitle: "Roulette",
     },
+    5:{
+      title: "Global Wonders: Tourist Navigation Map Application",
+      descrip1: `
+      Leveraged OpenStreetMap API to render detailed maps featuring roads, landmarks, and points of interest. 
+
+    Ensured full responsiveness during loading and user interactions to the UI components. Effectively optimized algorithm such all interactions are responded within 0.5s for display.
+
+    Implemented Dijkstra and A* algorithms, creating a hybrid solution using an iterative Greedy Algorithm combined with Simulated Annealing, featuring shifting and reversing perturbations to efficiently solve the TSP.
+
+    Ranked Top 8 out of all teams on the University of Toronto's leaderboard, highlighting the efficiency and effectiveness of the solution.`,
+
+      descrip2: "Skills: C++, EZGL, GIS, GTK, Git, OpenStreetMap API, OpenWetherMap API, Algorithm and Data Structure.",
+      img: projectImg5,
+      imgTitle: "Roulette",
+    },
+    6:{
+      title: "Elevator System",
+      descrip1: `
+      Developed a algorithm for a 10-floor functional elevator system, implemented with Verilog. The system consists: the Elevator Control Unit (ECU) and the Car Control Unit (CCU), each responsible for distinct elevator operations. `,
+
+      descrip2: "Skills: Verilog.",
+      img: projectImg6,
+      imgTitle: "Roulette",
+
+    }
   };
 
   return (
@@ -81,9 +110,11 @@ function Work() {
 
       {Object.keys(allProjects).map((key) => {
         const project = allProjects[key];
+
         return (
           <Project
             key={key}
+            projectkey={parseInt(key)}
             title={project.title}
             descrip1={project.descrip1}
             descrip2={project.descrip2}
