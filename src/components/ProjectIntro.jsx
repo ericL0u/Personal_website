@@ -92,7 +92,7 @@ function ProjectIntro() {
       date="2024 May - 2024 Sept"
       dateClassName='date-right date-font'
       contentStyle={{width: '350px', marginRight:'150px'}}
-      iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+      iconStyle={{  background: 'rgb(33, 150, 243)', color: '#fff' }}
       // icon={<WorkIcon />}
     >
       <h3 className="vertical-timeline-element-title">Full stack developer/Automation Technician - IKO North America</h3>
@@ -107,7 +107,7 @@ function ProjectIntro() {
       contentStyle={{width: '350px', marginLeft:'150px'}}
       dateClassName='date-left date-font'
 
-      iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+      iconStyle={{  background: 'rgb(33, 150, 243)', color: '#fff' }}
       // icon={<WorkIcon />}
     >
       <h3 className="vertical-timeline-element-title">Incoming!</h3>
