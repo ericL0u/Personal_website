@@ -5,6 +5,7 @@ import Home from './Home';
 import About from './About';
 import Work from './Work'
 import './MainScreen.css'
+import ResponsiveAppBar from './HeaderMenu';
 
 function mainScreen() {
   const [finalMove, setFinalMove] = useState(false);
@@ -23,7 +24,8 @@ function mainScreen() {
       <div
         className={`animatedScreen1 ${finalMove ? 'final' : ''}`}
       ></div>
-      <Header />
+      {/* <Header /> */}
+      <ResponsiveAppBar></ResponsiveAppBar>
         <>
           <main>
             <About />
