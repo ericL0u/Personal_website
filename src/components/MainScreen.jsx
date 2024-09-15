@@ -26,6 +26,7 @@ function mainScreen() {
       ></div>
       <Header />
       <ResponsiveAppBar></ResponsiveAppBar>
+      {/* needs adjustment for now */}
         <>
           <main>
             <About />
