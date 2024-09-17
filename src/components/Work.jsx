@@ -9,9 +9,13 @@ import projectImg6 from "../assets/elevators.jpg";
 import projectImg5 from "../assets/map.png";
 import "./styles/styles.css";
 
-const Project = ({ projectkey, title, descrip1, descrip2, img, imgTitle }) => {
+const Project = ({ projectkey, title, descrip1, descrip2, img, imgTitle, link }) => {
    const imgStyle = projectkey === 5 ? {} : {};
-  //  "margin-top": '100px', width:'300px', height:'auto'
+
+  let invis = 0
+  if (link === undefined){
+    invis = 1;
+  }
   return (
     <div className="work-item padLeft ">
       <img src={img} alt={imgTitle} className="work-logo" style={imgStyle}/>
@@ -22,7 +26,11 @@ const Project = ({ projectkey, title, descrip1, descrip2, img, imgTitle }) => {
           <p className="projectDesc work-font" ><strong>{descrip2}</strong></p>
         </div>
 
-        <button className="work-button work-font">Get {title}</button> 
+        <button className="work-button work-font" onClick={() => {
+          window.open(link, '_blank' )}} style={{display: invis === 1 ? 'none': 'block'}} >
+            Get {title}
+        </button> 
+
       </div>
     </div>
   );
@@ -49,6 +57,7 @@ function Work() {
       descrip2: "Skills involved: Docker, Docker compose, SQL, Express, Sequelize, Postman, RESTful",
       img: projectImg2,
       imgTitle: "linkedin learning",
+      link: 'https://github.com/ericL0u/Linkedin-Learning-Backend-API'
     },
     
     3: {
@@ -57,6 +66,7 @@ function Work() {
       descrip2: "Skills: React, html, css, javascript",
       img: projectImg4,
       imgTitle: "website",
+      link: "https://github.com/ericL0u/Personal_website"
     },
     4: {
       title: "Interactive Virtual Roulette Game",
@@ -64,6 +74,7 @@ function Work() {
       descrip2: "Skills: C, image rendering with uint16_t",
       img: projectImg3,
       imgTitle: "Roulette",
+      link: 'https://github.com/ericL0u/interactive-virtual-roulette-game'
     },
     5:{
       title: "Global Wonders: Tourist Navigation Map Application",
@@ -88,7 +99,7 @@ function Work() {
       descrip2: "Skills: Verilog.",
       img: projectImg6,
       imgTitle: "Roulette",
-
+      link: 'https://github.com/ericL0u/Elevator-Control-System'
     }
   };
 
@@ -120,6 +131,7 @@ function Work() {
             descrip2={project.descrip2}
             img={project.img}
             imgTitle={project.imgTitle}
+            link={project.link}
           />
         );
       })}
