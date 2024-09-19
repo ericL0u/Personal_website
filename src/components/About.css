@@ -176,7 +176,84 @@
     }
   }
  
+  /* mobile css */
+  @media (max-width: 800px) {
+    html{
+      background-color: #f0f6ff;
+      margin-left: 10%;
+      font-size: 60%;
+    }
+    .about-section {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+  
+    .about-content {
+      max-width: 50%;
+      opacity: 0;
+      animation: fadeIn 1s ease-in-out forwards;
+      animation-delay: 1.5s;
+      margin-bottom: 0;
+    }
+  
+    .intro {
+      text-align: left;
+      font-size: 2rem;
+    }
+  
+    .description {
+      text-align: left;
+      font-size: 0.8rem;
 
+    }
+  
+    .imgIcon {
+      margin-top: 0;
+      align-items: flex-start;
+    }
+  
+    .profile-pic {
+      width: 120px;
+      margin-top: 80px;
+      margin-left: 40px;
+      margin-bottom: 40px;
+    }
+  
+    .iconOutline {
+      justify-content: flex-start;
+      margin-left: 40px;
+    }
+  
+    .Icons {
+      margin-left: 0;
+      margin-right: 20px;
+    }
+  
+    .scroll-text {
+      margin-left: 0;
+      margin-top: 40px;
+      text-align: left;
+    }
+
+  }
  
 
- 
+  @media (max-width: 425px) {
+    .talk{
+      display: none;
+    }
+    .scroll-line {
+      display: none;
+    }
+    }
+
+
+  @media (max-width: 1000px) {
+    .talk{
+      display: none;
+    }
+    .scroll-line {
+      display: none;
+    }
+    }
