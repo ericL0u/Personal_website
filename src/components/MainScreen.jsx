@@ -30,8 +30,8 @@ function mainScreen() {
         <>
           <main>
             <About />
-            {/* <Home />
-            <Work /> */}
+            <Home />
+            <Work />
           </main>
           <Footer />
         </>
