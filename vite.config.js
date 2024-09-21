@@ -11,3 +11,5 @@ export default defineConfig({
 // build and deploy on github
 // npm run build
 // npm run deploy
+
+// github pages deployed
