@@ -1,93 +1,145 @@
-
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    background-color: #f0f6ff;
-  }
-  
-  .LogoButton{
-    margin-top: 20px;
-    margin-left: 50px;
-    width: 50px; /* Increase button width */
-    height: 50px; /* Set button height */
-    background: none; /* Remove background color */
-    border: none; /* Remove border */
-    outline: none; /* Remove outline */
-    cursor: pointer; /* Change cursor to pointer */
-    display: flex; /* Center the icon */
-    align-items: center; /* Vertically center the icon */
-    justify-content: center; /* Horizontally center the icon */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #f0f6ff;
+}
+
+.LogoButton {
+  margin-top: 20px;
+  margin-left: 50px;
+  width: 50px;
+  height: 50px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-left, .header-right {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+}
+
+.menu {
+  padding: 5px 10px;
+  font-size: 20px;
+  letter-spacing: 4px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: inherit;
+}
+
+.header-right .talk {
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: #1a2a3a;
+}
+
+.header-left .menu::before {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 20px;
+  margin: 0 15px;
+  background-color: #1a2a3a;
+}
+
+.talk::before {
+  content: '\1F4AC';
+  margin-right: 10px;
+  color: #a333c8;
+  font-size: 24px;
+}
+
+.profile_pic {
+  width: 90px;
+}
+
+.animatedScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 200vh;
+  background-color: rgb(255, 199, 166);
+  z-index: 99;
+  transition: transform 0.5s ease-in-out, background-color 0.5s ease;
+  transform: translateY(-100%);
+}
+
+.animatedScreen.active {
+  transform: translateY(0%);
+}
+
+.animatedScreen.colorChange {
+  background-color: rgb(169, 203, 255);
+}
+
+  /* mobile css */
+@media (max-width: 425px) {
+  .header {
+    flex-direction: column;
+    padding: 10px 20px;
   }
 
-  .header-left, .header-right {
-    display: flex;
-    align-items: center;
-  }
-  
   .logo {
-    width: 80px; /* Adjust size as needed */
-    height: auto;
+    width: 60px;
   }
-  
+
   .menu {
-    padding: 5px 10px; /* Adjust padding to increase the button size */
-    font-size: 20px; /* Ensure the text is 20px */
-    letter-spacing: 4px;
-    cursor: pointer;
-    background: none;
-    border: none;
-    color: inherit;
+    font-size: 16px;
+    padding: 10px;
   }
-  
-  
-  
+
   .header-right .talk {
-    font-size: 18px;
-    letter-spacing: 2px;
-    color: #1a2a3a;
-  }
-  
-  .header-left .menu::before {
-    content: '';
-    display: inline-block;
-    width: 1px;
-    height: 20px;
-    margin: 0 15px;
-    background-color: #1a2a3a;
-  }
-  
-  .talk::before {
-    content: '\1F4AC'; /* Unicode for speech balloon */
-    margin-right: 10px;
-    color: #a333c8; /* Purple color */
-    font-size: 24px;
-  }
-  
-  .profile_pic{
-
-    width: 90px;
+    font-size: 16px;
+    letter-spacing: 1px;
   }
 
-  .animatedScreen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 200vh;
-    background-color: rgb(255, 199, 166); 
-    z-index: 99;
-    transition: transform 0.5s ease-in-out, background-color 0.5s ease; ; 
-    transform: translateY(-100%);
+  .profile_pic {
+    width: 70px;
   }
-  
+}
 
-  .animatedScreen.active {
-    transform: translateY(0%); 
-  }
-  
-  .animatedScreen.colorChange{
-    background-color: rgb(169, 203, 255); 
+@media (max-width: 480px) {
+
+  .header {
+    padding: 5px 10px;
   }
 
+  .LogoButton {
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  .menu {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .header-right .talk {
+    font-size: 14px;
+  }
+
+  .profile_pic {
+    width: 180%;
+  }
+
+}
+
+@media (max-width: 894px) {
+.talk{
+  display: none;
+}
+}

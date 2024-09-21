@@ -47,6 +47,7 @@
 .flex-Col {
   display: flex;
   flex-direction: column;
+  max-width: 100vw;
 }
 
 .work-section {
@@ -54,10 +55,10 @@
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
-  /* padding: 50px 20px; */
+
   background-color: #f0f6ff;
-  /* padding-left: 250px; */
   width: 100%;
+  max-width: 100vw;
 }
 
 .work-section h2 {
@@ -159,4 +160,52 @@
   height: 1px;
   background: #d3d3d3;
   margin-top: 20px;
+}
+
+
+@media (max-width: 800px) {
+
+  .work-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  
+    background-color: #f0f6ff;
+  
+    width: 100%;
+    max-width: 100vw;
+  }
+  .dots-background{
+    display: none;
+  }
+  .padLeft {
+    padding-left: 10%;
+    max-width: 100vw;
+  }
+  .work-item {
+    display: flex;
+    align-items: flex-start;
+    max-width: 20%;
+    margin-bottom: 50px;
+  }
+  .work-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  
+    background-color: #f0f6ff;
+    max-width: 100vw;
+  }
+
+  .FullDescription{
+    display: none;
+  }
+  .work-logo{
+    display:none;
+  }
+  .desc{
+    font-size: 2rem ;
+  }
 }

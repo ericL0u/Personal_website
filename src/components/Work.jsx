@@ -22,8 +22,10 @@ const Project = ({ projectkey, title, descrip1, descrip2, img, imgTitle, link })
       <div className="flex-Col work-font">
         <div className="work-font">
           <div className="desc">{title}</div>
-          <p className="work-section work-font">{descrip1}</p>
+          <div className= "FullDescription">
+         <p className="work-section work-font">{descrip1}</p>
           <p className="projectDesc work-font" ><strong>{descrip2}</strong></p>
+          </div>
         </div>
 
         <button className="work-button work-font" onClick={() => {
