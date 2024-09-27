@@ -12,8 +12,9 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import './HeaderMenu.css';
 
-const pages = ['Products', 'Pricing', 'Blog'];
+const pages = ['Menu'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
@@ -37,7 +38,7 @@ function ResponsiveAppBar() {
 
   return (
     <>
-    <AppBar position="fixed" sx={{ backgroundColor: '#f0f6ff' }} elevation={0}>
+    <AppBar className={"width250"} position="fixed" sx={{ backgroundColor: '#f0f6ff',zIndex: 1 }} elevation={0}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
             {/* Icon */}
@@ -131,7 +132,7 @@ function ResponsiveAppBar() {
       </Container>
 
     </AppBar>
-          <Box sx={{ pt: 8 }}>  {/* Adjust this padding based on your AppBar's height */}
+          <Box sx={{ pt: 15 }}> 
           <Typography variant="body1">
 
           </Typography>

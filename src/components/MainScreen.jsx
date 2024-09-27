@@ -24,8 +24,8 @@ function mainScreen() {
       <div
         className={`animatedScreen1 ${finalMove ? 'final' : ''}`}
       ></div>
-      <Header />
-      {/* <ResponsiveAppBar></ResponsiveAppBar> */}
+      {/* <Header /> */}
+      <ResponsiveAppBar></ResponsiveAppBar>
       {/* needs adjustment for now */}
         <>
           <main>
