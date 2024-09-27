@@ -14,7 +14,6 @@ function mainScreen() {
 
     setTimeout(() => {
       setFinalMove(true); 
-      console.log(finalMove)
     }, 500); 
 
   }, []);
@@ -26,7 +25,7 @@ function mainScreen() {
       ></div>
       {/* <Header /> */}
       <ResponsiveAppBar></ResponsiveAppBar>
-      {/* needs adjustment for now */}
+
         <>
           <main>
             <About />

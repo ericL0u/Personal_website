@@ -6,29 +6,23 @@
     font-style: normal;
   }
 
-
-
-.css-hhdjsd-MuiContainer-root{
-    width: 250px !important;
-
-}
-
-
-.css-1a2fzn6-MuiPaper-root-MuiAppBar-root{
-    margin-top: 10px;
-    width: 250px !important;
-    background-color: transparent !important;
-    align-items: start !important;
-    left: 1.75% !important;
-}
-
-.css-ycvhdl{
-    display: flex;
-    align-items: start;
-}
-
-
-.css-vm9lkw-MuiButtonBase-root-MuiButton-root{
-    font-family: 'bitter' !important;
-    font-size: 1.3rem !important;
-}
+  .animatedScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 200vh;
+    background-color: rgb(255, 199, 166);
+    z-index: 99;
+    transition: transform 0.5s ease-in-out, background-color 0.5s ease;
+    transform: translateY(-100%);
+  }
+  
+  .animatedScreen.active {
+    transform: translateY(0%);
+  }
+  
+  .animatedScreen.colorChange {
+    background-color: rgb(169, 203, 255);
+  }
+  

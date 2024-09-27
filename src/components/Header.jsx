@@ -12,7 +12,7 @@ function Header({bgColor}) {
   const currLoc = useLocation();
 
   const LogoButtonHandler = () => {
-    console.log(currLoc.pathname)
+    // console.log(currLoc.pathname)
     if (currLoc.pathname != '/Personal_website/'){
 
     
