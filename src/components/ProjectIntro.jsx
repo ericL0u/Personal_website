@@ -4,8 +4,9 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 
 import './ProjectIntro.css';
-import './styles/styles.css'
-import { TbTextSize } from 'react-icons/tb';
+import './styles/styles.css';
+import HeaderMenu from './HeaderMenu';
+import Header from './Header';
 
 function ProjectIntro() {
   const [isTransitioning, setIsTransitioning] = useState(false);
@@ -35,6 +36,7 @@ function ProjectIntro() {
 
   return (
     <>
+    <HeaderMenu></HeaderMenu>
     <div className='container bitter-home'>
       <div className='title'>
         Experience Timeline 

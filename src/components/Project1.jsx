@@ -14,7 +14,7 @@ function NewPage() {
 
   return (
     <div>
-    <Header bgColor={"#f6d2bd"}></Header>
+    {/* <Header bgColor={"#f6d2bd"}></Header> */}
     <section className="Main">
     <div className={`projectScreen ${finalMove ? 'final' : ''}`}></div>
     <ProjectIntro></ProjectIntro>
