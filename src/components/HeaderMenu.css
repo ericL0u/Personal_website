@@ -6,6 +6,11 @@
     font-style: normal;
   }
 
+  .wrapper{
+    width: 100vw;
+    outline: black, 1rem,;
+  }
+
   .animatedScreen {
     position: fixed;
     top: 0;
@@ -26,3 +31,17 @@
     background-color: rgb(169, 203, 255);
   }
   
+  .dropDown{
+    position:fixed;
+    top:0;
+    width: 95vw;
+    height: 95vh;
+    z-index: 100;
+    background-color: red;
+    transition: transform 0.3 ease-in-out;
+    transform: translateY(-100%);
+  }
+
+  .dropDown.dropping{
+    transform:translateY(0%);
+  }

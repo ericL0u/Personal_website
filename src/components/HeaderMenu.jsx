@@ -10,6 +10,8 @@ function ResponsiveAppBar() {
   const location = useLocation();
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [finalMove, setFinalMove] = useState(false);
+  const [menuDrop, setMenuDrop] = useState(false);
+
 
   const handleLogoClick = () => {
     if (location.pathname !== '/Personal_website/') {
@@ -25,14 +27,21 @@ function ResponsiveAppBar() {
     }
   };
 
+  const menuDisplay = () => {
+    setMenuDrop(true);
+  };
+
   return (
-    <>
+    <div className='wrapper'>
       <div
         className={`animatedScreen ${isTransitioning ? 'active' : ''} ${
           finalMove ? 'colorChange' : ''
         }`}
       ></div>
 
+      <div className = {`dropDown ${menuDrop ? 'dropping' : ''} wrapper ${menuDrop ? 'expand': ''}`}>
+       {/* menu drop down: more navigation*/}
+      </div>
 
       <AppBar
         position="fixed"
@@ -73,6 +82,7 @@ function ResponsiveAppBar() {
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               {pages.map((page) => (
                 <Button
+                  onClick = {menuDisplay}
                   key={page}
                   sx={{
                     my: 2,
@@ -93,7 +103,7 @@ function ResponsiveAppBar() {
       <Box sx={{ pt: 15 }}>
         <Typography variant="body1">{/* Content */}</Typography>
       </Box>
-    </>
+    </div>
   );
 }
 
